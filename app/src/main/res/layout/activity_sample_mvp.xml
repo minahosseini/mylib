@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".sampleMVP.SampleMVPActivity">
+
+    <com.parsa.myapp.customViews.CustomEditText
+        android:id="@+id/edtName"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.parsa.myapp.customViews.CustomEditText
+        android:id="@+id/edtFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Family" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:text="Get Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

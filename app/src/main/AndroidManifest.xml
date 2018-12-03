@@ -5,7 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".MyApplication"
@@ -44,9 +44,10 @@
         <activity android:name=".IMDB_MVP.IMDBActivityMVP_" />
         <activity android:name=".RXSamples.RXActivity" />
         <activity android:name=".ServiceSample.ServiceActivity" />
-        <service android:name=".ServiceSample.SampleService" />
-        <activity android:name=".Music.AddMusicActivity_"/>
 
+        <service android:name=".ServiceSample.SampleService" />
+
+        <activity android:name=".Music.AddMusicActivity_" />
 
         <service android:name=".FCM.FCMGetToken">
             <intent-filter>
@@ -64,8 +65,12 @@
         <service android:name=".Music.ListMusics.PlayMusics.MusicPlayerService" />
 
         <activity android:name=".Music.ListMusics.PlayMusics.DetailMusicActivity_" />
-        <activity android:name=".Zhing.QRCodeReaderActivity"> <intent-filter>
+        <activity android:name=".Zhing.QRCodeReaderActivity">
+
+        </activity>
+        <activity android:name=".Realm.RealmUserActivity_"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
+
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
     </application>

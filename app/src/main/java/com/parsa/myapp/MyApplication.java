@@ -7,6 +7,8 @@ import com.orhanobut.hawk.Hawk;
 import com.orm.SugarApp;
 import com.parsa.myapp.FCM.FCMGetToken;
 
+import io.realm.Realm;
+
 /**
  * Created by hmd on 06/16/2018.
  */
@@ -15,6 +17,7 @@ public class MyApplication extends SugarApp {
     @Override
     public void onCreate() {
         super.onCreate();
+        Realm.init(this);
         Hawk.init(this).build();
         FCMGetToken fcmGetToken=new FCMGetToken();
         FirebaseMessaging.getInstance().subscribeToTopic("news");
